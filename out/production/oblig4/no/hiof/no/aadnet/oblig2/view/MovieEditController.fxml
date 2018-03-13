@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.no.aadnet.oblig2.controller.FilmEditController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="67.0" layoutY="342.0" mnemonicParsing="false" text="Submit" />
+            <Button fx:id="btnReturn" layoutX="153.0" layoutY="340.0" mnemonicParsing="false" onAction="#onReturn" text="Return" />
+            <TextField layoutX="130.0" layoutY="44.0" />
+            <TextField layoutX="132.0" layoutY="120.0" />
+            <TextArea layoutX="128.0" layoutY="204.0" prefHeight="130.0" prefWidth="200.0" />
+            <DatePicker layoutX="128.0" layoutY="159.0" />
+            <Label layoutX="56.0" layoutY="47.0" text="Title" />
+            <Label layoutX="56.0" layoutY="116.0" text="Duration" />
+            <Label layoutX="50.0" layoutY="163.0" text="Release" />
+            <Label layoutX="47.0" layoutY="202.0" text="Description" />
+            <MenuBar layoutX="5.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <TextField layoutX="132.0" layoutY="83.0" />
+            <Label layoutX="57.0" layoutY="83.0" text="Url" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
