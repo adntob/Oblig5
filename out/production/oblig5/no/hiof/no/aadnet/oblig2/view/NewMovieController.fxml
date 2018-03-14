@@ -6,16 +6,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.no.aadnet.oblig2.controller.FilmEditController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.no.aadnet.oblig2.controller.NewFilmController">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="600.0">
          <children>
-            <Button layoutX="67.0" layoutY="342.0" mnemonicParsing="false" text="Submit" />
-            <Button fx:id="btnReturn" layoutX="153.0" layoutY="340.0" mnemonicParsing="false" onAction="#onReturn" text="Return" />
-            <TextField layoutX="130.0" layoutY="44.0" />
-            <TextField layoutX="132.0" layoutY="120.0" />
-            <TextArea layoutX="128.0" layoutY="204.0" prefHeight="130.0" prefWidth="200.0" />
-            <DatePicker layoutX="128.0" layoutY="159.0" />
+            <Button layoutX="67.0" layoutY="342.0" fx:id="btnSubmit" mnemonicParsing="false" onAction="#onSubmit" text="Submit" />
+            <Button fx:id="btnCancel" layoutX="153.0" layoutY="340.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+            <TextField fx:id="txtTitle" layoutX="130.0" layoutY="44.0" />
+            <TextField fx:id="txtRuntime" layoutX="132.0" layoutY="120.0" />
+            <TextArea fx:id="txtDescription" layoutX="128.0" layoutY="204.0" prefHeight="130.0" prefWidth="200.0" />
+            <DatePicker fx:id="txtRelease" layoutX="128.0" layoutY="159.0" />
             <Label layoutX="56.0" layoutY="47.0" text="Title" />
             <Label layoutX="56.0" layoutY="116.0" text="Duration" />
             <Label layoutX="50.0" layoutY="163.0" text="Release" />
@@ -39,8 +39,8 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <TextField layoutX="132.0" layoutY="83.0" />
-            <Label layoutX="57.0" layoutY="83.0" text="Url" />
+            <TextField fx:id="txtUrl" layoutX="132.0" layoutY="83.0" />
+            <Label layoutX="57.0" layoutY="83.0" text="URL" />
          </children>
       </AnchorPane>
    </children>

@@ -29,14 +29,14 @@
                       </Menu>
                       <Menu mnemonicParsing="false" text="Help">
                         <items>
-                          <MenuItem mnemonicParsing="false" onAction = "#enterEdit" text="TestButton" />
+                          <MenuItem mnemonicParsing="false" text="TestButton" />
                         </items>
                       </Menu>
                     </menus>
                   </MenuBar>
                </children>
             </VBox>
-            <ListView fx:id="combo" prefHeight="741.0" prefWidth="434.0" />
+            <ListView fx:id="movieListView" prefHeight="741.0" prefWidth="434.0" />
          </children>
       </VBox>
       <AnchorPane layoutX="438.0" prefHeight="772.0" prefWidth="587.0">
@@ -54,14 +54,10 @@
                </font>
             </TextArea>
             <DatePicker fx:id="txtRelease" editable="false" layoutX="387.0" layoutY="188.0" prefHeight="31.0" prefWidth="179.0" />
-            <TextField fx:id="txtRunningtime" editable="false" layoutX="383.0" layoutY="131.0" />
+            <TextField fx:id="txtRunTime" editable="false" layoutX="383.0" layoutY="131.0" />
             <HBox layoutX="14.0" layoutY="618.0" prefHeight="39.0" prefWidth="406.0">
                <children>
-                  <Button fx:id="btnNew" mnemonicParsing="false" onAction="#onNewClicked" prefHeight="12.0" prefWidth="83.0" text="New">
-                     <font>
-                        <Font name="Arial" size="15.0" />
-                     </font>
-                  </Button>
+                  <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#onNewClicked" prefHeight="31.0" prefWidth="76.0" text="New" />
                   <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#onDeleteClicked" text="Delete">
                      <font>
                         <Font name="Arial" size="15.0" />
@@ -70,7 +66,11 @@
                         <Insets left="40.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#onEditClicked" prefHeight="0.0" prefWidth="46.0" text="Edit" />
+                  <Button fx:id="btnNew" mnemonicParsing="false" onAction="#editMovie" prefHeight="12.0" prefWidth="83.0" text="Edit">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Button>
                </children>
             </HBox>
             <ImageView fx:id="moviePoster" fitHeight="350.0" fitWidth="201.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
