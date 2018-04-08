@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"no.hiof.no.aadnet.oblig2.model"}]

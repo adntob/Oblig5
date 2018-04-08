@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"no.hiof.no.aadnet.oblig2.model","l":"Episode"}]
